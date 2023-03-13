@@ -19,6 +19,7 @@ img {
   width: 1600px;
   margin: 0 auto;
 }
+
 header {
   width: 1600px;
 }
@@ -51,47 +52,62 @@ header {
   margin-left: 33px;
   margin-bottom: 20px;
 }
-.first {
+.content {
   display: flex;
   background: #f1e4e6;
   width: 1600px;
   height: 764px;
 }
-.first_photo {
+.content_photo {
   width: 800.58px;
   height: 764px;
   left: 0px;
   top: 75px;
 }
 .text {
+  height: 92px;
   margin-top: 290px;
   margin-right: 330px;
+border-left:12px solid #f26376;
 
-  background: #f16d7f;
 }
-.number {
+.main {
   padding: 65px 230px 96px 230px;
 }
-.cool {
+.item_content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 30px;
+  
 }
 .item {
+
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   gap: 30px;
+  
+  
+}
+.photo{
   background: rgba(33, 22, 22, 0.7);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text_item{
+  position: absolute;
 }
 .photo_menu_big {
-    grid-column: span 1;
-    grid-row: span 3;
+    grid-column: span 3;
+    grid-row: span 2;
     gap: 60px;
   }
-.text_menu {
+.text_item_white {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -103,7 +119,7 @@ header {
 
   color: #ffffff;
 }
-.text_menu_colour {
+.text_item_colour {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
@@ -144,6 +160,11 @@ header {
   line-height: 17px;
   color: #5d5d5d;
 }
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 .colour_price {
   font-family: "Lato";
   font-style: normal;
@@ -172,6 +193,8 @@ font-weight: 400;
 font-size: 30px;
 line-height: 36px;
 color: #222222;
+margin-bottom: 6px;
+text-align: center;
 }
 .shop{
     font-family: 'Lato';
@@ -180,4 +203,30 @@ color: #222222;
     font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;  
+    margin-bottom: 50px;
+   text-align: center;
+}
+@media (max-width: 848px)
+.container
+{
+width: 770px;
+}
+.logo{
+  margin-bottom: 0.48px;
+}
+.number{
+  margin-bottom: 110px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.second h2{
+  margin-bottom: 3.3px;
+}
+.shop{
+  margin-bottom: 73px;
 }
